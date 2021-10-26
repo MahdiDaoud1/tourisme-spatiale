@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+tailwind.css
+package-lock.json
+package.json
+vite.config.js

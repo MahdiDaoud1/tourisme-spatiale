@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../tailwind.css" />
+    <title>Jupiter</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Lato&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .font-exo {
+        font-family: "Exo 2", sans-serif;
+      }
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+      @media screen and (max-width: 800px) {
+        .initial {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        canvas {
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex h-full bg-black initial">
+      <div class="h-screen w-full md:w-1/2 flex flex-col justify-center px-8">
+        <div style="max-width: 550px">
+          <h1 class="text-white text-5xl mb-6 font-exo leading-none">
+            La planete Jupiter
+          </h1>
+          <ol class="list-decimal text-gray-400 mb-4 font-lato">
+            <li>Période de révolution: 12 années</li>
+            <li>Superficie: 61.42 billion km²</li>
+            <li>Vitesse de rotation(à l’équateur): 47 051 km/h</li>
+            <li>
+              Température de surface• Maximum 165 K (−108 °C )• Moyenne 110,0 K
+              (−163 °C )• Minimum 112 K (−161 °C )
+            </li>
+
+            <li>Vapeur d'eau H2O: 0,1 %</li>
+          </ol>
+          <span class="flex">
+            <a
+              href="./mars.html"
+              class="
+                inline-block
+                text-white
+                bg-green-600
+                px-5
+                py-3
+                mx-2
+                rounded-full
+                start-btn
+              "
+            >
+              <i class="bi bi-arrow-left"></i> visiter Mars
+            </a>
+            <a
+              href="./saturne.html"
+              class="
+                inline-block
+                text-white
+                bg-green-600
+                px-5
+                py-3
+                rounded-full
+                mx-2
+              "
+            >
+              visiter Saturne <i class="bi bi-arrow-right"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="w-screen md:w-1/2" id="canvas-container">
+        <canvas></canvas>
+      </div>
+    </div>
+    <script src="./js/jupiter.js" type="module"></script>
+  </body>
+</html>

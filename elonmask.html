@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Lato&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: rgb(247, 245, 245);
+        font-family: "Exo 2", sans-serif;
+        font-size: 4rem;
+        padding: 1.5rem 1.5rem;
+        border: 10px double rgb(226, 225, 225);
+      }
+
+      .introduction .lefth {
+        margin-left: 25rem;
+        box-shadow: 75px 53px rgb(134, 123, 18), -0.5px -0.5px 10px black;
+      }
+      .intro h1 {
+        font-size: 3.5rem;
+        font-family: "Amiri", serif;
+      }
+      .intro img {
+        width: 30%;
+        height: 100%;
+        float: left;
+        box-shadow: 3px 3px 10px black;
+        transition: 0.5s all ease;
+      }
+
+      .intro img:hover {
+        transform: scale(1.2, 1.2);
+      }
+      .intro p {
+        padding: 0 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        text-align: left;
+      }
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+    </style>
+    <title>Elon Mask</title>
+  </head>
+  <body>
+    <section class="relative">
+      <img src="./assets/vivreenmars.jfif" class="w-full h-screen" />
+      <h1 class="title">Vivre sur Mars</h1>
+    </section>
+    <section
+      class="intro h-screen w-full flex justify-center items-center"
+      id="intro"
+    >
+      <div class="introduction w-3/4 text-center opacity-0">
+        <img class="left" src="./assets/elonMask.jfif" />
+        <div class="lefth">
+          <h1>Le promet d'Elon Musk</h1>
+
+          <p>
+            Le 16 janvier, Elon Musk a surpris ses fans en dévoilant dans une
+            série de tweets sa stratégie pour coloniser Mars. Il a notamment
+            dévoilé un calendrier pour peupler la Planète rouge avec un million
+            d'humains d'ici 2050. Cette idée de faire de l'humanité une espèce
+            interplanétaire n'est pas une lubie. Chez Musk, il s'agit simplement
+            du « but de sa vie » et cela lui tient à cœur comme il l'a confié à
+            Ashlee Vance dans l'excellent livre qu'il lui a consacré (Elon Musk,
+            l'entrepreneur qui va changer le monde, paru chez Eyrolles en 2015).
+            Elon Musk a toujours dit que c'est la raison pour laquelle il a
+            fondé SpaceX en 2002 et pourquoi il s'est enrichi. Pour comprendre
+            le raisonnement de Musk, il faut savoir qu'il craint que «
+            l'humanité s'apprête à vivre des jours sombres, voire à disparaître
+            du fait de l'avènement de l'intelligence artificielle et de robots
+            de plus en plus intelligents ». Concernant Mars, son but est
+            d'établir une colonie martienne pour préserver l'humanité qui dans
+            un premier temps dépendrait de la Terre pour « survivre », puis au
+            fil des années deviendrait autonome et finirait vraisemblablement
+            par faire sécession.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./animation.js"></script>
+  </body>
+</html>

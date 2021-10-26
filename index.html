@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Voyage</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Lato&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .font-exo {
+        font-family: "Exo 2", sans-serif;
+      }
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+      @media screen and (max-width: 800px) {
+        .initial {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        canvas {
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex h-full bg-black initial">
+      <div class="h-screen w-full md:w-1/2 flex flex-col justify-center px-8">
+        <div style="max-width: 550px">
+          <h1 class="text-white text-4xl mb-6 font-exo leading-none">
+            TOURISME SPATIAL: QUEL VOYAGE VOUS OFFRIR
+          </h1>
+          <p class="text-gray-400 mb-4 font-lato">
+            A l’époque, le voyage dans l’espace n’était qu’un mythe, une utopie…
+            Cependant il a suffit d’un siècle pour que, d’utopie, l’idée de
+            vivre dans l’espace devienne réalité. C’est le début de la
+            colonisation de l’espace ! réalisables
+          </p>
+          <span>
+            <a
+              href="#intro"
+              class="
+                inline-block
+                text-white
+                bg-green-600
+                px-8
+                py-3
+                rounded-full
+                start-btn
+              "
+            >
+              Commencer l'aventure
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="w-screen md:w-1/2" id="canvas-container">
+        <canvas></canvas>
+      </div>
+    </div>
+    <section class="intro h-screen w-full" id="intro">
+      <div class="introduction">
+        <img src="./assets/solarSys.jpg" />
+        <div>
+          <h1>Introduction</h1>
+
+          <p>
+            Le vol spatial est un domaine récent de l’ingénierie, qui a connu
+            son plus grand essor dans les années 1960. La technologie des fusées
+            remonte au treizième siècle ; son emploi à usage militaire s’est
+            très rapidement répandu depuis l’orient jusqu’en Europe de l’Est. Il
+            aura pourtant fallu attendre le XXème siècle pour que l’on
+            s’intéresse au vol orbital, utilisant les capacités du moteur fusée
+            non plus seulement pour projeter diverses charges sur un adversaire,
+            mais aussi pour s’extraire durablement de l’atmosphère.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black h-screen flex content-center">
+      <img
+        src="./assets/solarsys2.jpg"
+        alt="solar system"
+        class="m-auto h-3/4 syssol"
+      />
+    </section>
+    <section class="h-screen planets">
+      <h1 class="text-4xl text-center">Plantes</h1>
+      <div class="flex flex-col content-around bg-gray justify-around my-2">
+        <div class="flex content-around justify-around">
+          <a href="pages/mercury.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/mercuryplanet.jfif" />
+              <h4>mercure</h4>
+            </span></a
+          >
+          <a href="pages/venus.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/venusplanet.jfif" />
+              <h4>venus</h4>
+            </span></a
+          >
+          <a href="pages/earth.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/earthplanet.jfif" />
+              <h4>terre</h4>
+            </span></a
+          >
+        </div>
+        <div class="flex content-around justify-around">
+          <a href="./pages/mars.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/marsplanet.jfif" />
+              <h4>mars</h4>
+            </span></a
+          >
+          <a href="./pages/jupiter.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/jupiterplanet.jfif" />
+              <h4>jupiter</h4>
+            </span></a
+          >
+          <a href="./pages/uranus.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/uranusplanet.jfif" />
+              <h4>uranus</h4>
+            </span></a
+          >
+        </div>
+        <div class="flex content-around justify-around">
+          <a href="./pages/saturne.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/saturneplanet.jfif" />
+              <h4>saturne</h4>
+            </span></a
+          >
+          <a href="./pages/neptune.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/neptuneplanet.jfif" />
+              <h4>neptune</h4>
+            </span></a
+          >
+          <a href="./pages/moon.html" class="inline-block"
+            ><span class="flex flex-col">
+              <img src="./assets/moonplanet.jfif" />
+              <h4>La lune</h4>
+            </span></a
+          >
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+    <script src="./animation.js"></script>
+  </body>
+</html>

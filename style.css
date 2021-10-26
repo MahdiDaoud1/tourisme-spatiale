@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introduction {
+  width: 75%;
+  text-align: center;
+  opacity: 0;
+}
+
+.introduction div {
+  margin-left: 25rem;
+  box-shadow: 75px 53px rgb(58, 57, 59), -0.5px -0.5px 10px black;
+}
+.intro h1 {
+  font-size: 3.5rem;
+  font-family: "Amiri", serif;
+}
+.intro img {
+  width: 30%;
+  height: 100%;
+  float: left;
+  box-shadow: 3px 3px 10px black;
+  transition: 0.5s all ease;
+}
+.intro img:hover {
+  transform: scale(1.2, 1.2);
+}
+.intro p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.15rem;
+  text-align: left;
+}
+.vid1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(45, 2, 95);
+  opacity: 0;
+}
+
+.vid1 h1 {
+  color: white;
+  font-family: "Amiri", serif;
+  text-align: center;
+}
+.syssol {
+  box-shadow: 1px 1px 50px 10px rgba(189, 189, 189, 0.671);
+}
+.planets h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-family: "Exo 2", sans-serif;
+  color: rgb(101, 101, 102);
+}
+.planets h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.planets img {
+  width: 290px;
+  height: 250px;
+}
+.planets div {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@keyframes heading1 {
+  from {
+    top: 52%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes header {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
