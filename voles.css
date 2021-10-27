@@ -21,17 +21,20 @@
   justify-content: center;
 }
 .introduction {
-  width: 75%;
+  margin: 3rem 0;
+  width: 90%;
   text-align: center;
   opacity: 0;
 }
 
 .introduction .lefth {
   margin-left: 25rem;
+  margin-right: 2rem;
   box-shadow: 75px 53px rgb(58, 57, 59), -0.5px -0.5px 10px black;
 }
 .introduction .righth {
   margin-right: 25rem;
+  margin-left: 2rem;
   box-shadow: -75px 53px rgb(58, 57, 59), -0.5px -0.5px 10px black;
 }
 .intro h1 {
@@ -98,5 +101,42 @@
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 3rem;
+  }
+  .introduction {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .introduction .lefth {
+    margin: 1rem 0;
+    box-shadow: 1px 1px 50px black;
+  }
+  .introduction .righth {
+    margin: 1rem 0;
+    box-shadow: 1px 1px 50px black;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .title {
+    font-size: 2rem;
+  }
+  .introduction div {
+    width: 100%;
+    box-shadow: 1px 1px 50px black;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
   }
 }

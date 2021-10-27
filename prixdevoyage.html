@@ -68,8 +68,46 @@
               transform: translateY(0px);
             }
           }
+          @media screen and (max-width: 850px) {
+            .title{
+              font-size: 3rem;
+            }
+        .introduction{
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+          .introduction .lefth{
+            margin: 1rem 0;
+            box-shadow: 1px 1px 50px black;
+          }
+          .intro h1{
+            font-size: 2rem;
+          }
+          .intro img {
+    width: 400px;
+  }
+          
+        }
+       @media screen and (max-width: 340px) {
+        .title{
+              font-size: 2rem;
+            }
+          .introduction .lefth{
+            
+            width: 100%;
+            box-shadow: 1px 1px 50px black;
+            
+
+          }
+          .intro h1{
+            font-size: 1.5rem;
+          }
+          
+        }
+
         </style>
-        <title>Elon Mask</title>
+        <title>Prix</title>
       </head>
       <body>
         <section class="relative">
@@ -77,10 +115,10 @@
           <h1 class="title">Tourisme Spatial</h1>
         </section>
         <section
-          class="intro h-screen w-full flex justify-center items-center"
+          class="intro my-20 w-full flex justify-center items-center"
           id="intro"
         >
-          <div class="introduction w-3/4 text-center opacity-0">
+          <div class="introduction items-center  w-4/5 md:w-10/12 text-center opacity-0">
             <img class="left" src="./assets/last.jfif" />
             <div class="lefth">
               <h1>Combien coûte un voyage dans l’espace ?</h1>

@@ -58,20 +58,55 @@
           opacity: 1;
           transform: translateY(0px);
         }
-      }
+       
+      } @media screen and (max-width: 850px) {
+        .introduction{
+          display: flex;
+          flex-direction: column-reverse;
+        }
+          .introduction .lefth{
+            margin: 1rem;
+            
+            box-shadow: 1px 1px 50px black;
+            
+
+          }
+          .intro h1{
+            font-size: 2rem;
+          }
+          
+        }
+        .intro img {
+    width: 400px;
+    margin-bottom: 1rem;
+  }
+       @media screen and (max-width: 340px) {
+          .introduction .lefth{
+            
+            width: 100%;
+            box-shadow: 1px 1px 50px black;
+            
+
+          }
+          .intro h1{
+            font-size: 1.5rem;
+          }
+          
+        }
     </style>
     <title>Elon Mask</title>
   </head>
   <body>
-    <section class="relative">
+    <section class="relative mb-2">
       <img src="./assets/vivreenmars.jfif" class="w-full h-screen" />
-      <h1 class="title">Vivre sur Mars</h1>
+      <h1 class="title text-center">Vivre sur Mars</h1>
     </section>
+    <div></div>
     <section
-      class="intro h-screen w-full flex justify-center items-center"
+      class="intro w-full flex justify-center items-center"
       id="intro"
     >
-      <div class="introduction w-3/4 text-center opacity-0">
+      <div class="introduction items-center  w-4/5 md:w-10/12 text-center opacity-0">
         <img class="left" src="./assets/elonMask.jfif" />
         <div class="lefth">
           <h1>Le promet d'Elon Musk</h1>
